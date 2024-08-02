@@ -1,12 +1,12 @@
 ---
 # Display name
-title: Brook Tang 唐英豪
+title: 唐英豪
 
 # Name pronunciation (optional)
-name_pronunciation: ''
+name_pronunciation: 'Ying Hao Tang'
 
 # Full name (for SEO)
-first_name: Brook
+first_name: Yinghao
 last_name: Tang
 
 # Status emoji
@@ -25,32 +25,26 @@ role: Ph.D Student
 # Organizations/Affiliations to display in Biography blox
 organizations:
   - name: Zhejiang University
-    url: https://openai.com/
+    url: https://www.zju.edu.cn/english/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:yinghaotang2001@gmail.com'
     label: E-mail Me
   - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: https://x.com/MisterBrookT
   - icon: brands/github
-    url: https://github.com/gcushen
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://github.com/MisterBrookT
   - icon: academicons/google-scholar
     url: https://scholar.google.com/
-  - icon: academicons/orcid
-    url: https://orcid.org/
 
 interests:
-  - ☕️MLSystem
-  - ☕️Large Language Training
-  - ☕️Basketball/Swimming/Hiking
-  - ☕️Photography
+  - 📘MLSystem
+  - 📘LLM Training
+  - Visualization
+  - 📘Photography
 
 education:
   - area: PhD Artificial Intelligence
@@ -184,4 +178,4 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Hi, this is Yinghao Tang(唐英豪). I am currently a Ph.D. student in Computer Engineering at Zhejiang University under the supervision of Prof. ([Wei Chenttp://www.cad.zju.edu.cn/home/chenwei/)) in VAI group. Before that, I received my B.Eng. degree from Sichuan University. During my B.Eng., I was advised by Mingjie Tang in IDS lab. My research interests include MLsys, LLM training and visualization.
