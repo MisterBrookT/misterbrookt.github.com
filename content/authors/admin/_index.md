@@ -178,4 +178,4 @@ awards:
 
 ## About Me
 
-Hi, this is Yinghao Tang(唐英豪). I am currently a Ph.D. student in Computer Engineering at Zhejiang University under the supervision of Prof. ([Wei Chenttp://www.cad.zju.edu.cn/home/chenwei/)) in VAI group. Before that, I received my B.Eng. degree from Sichuan University. During my B.Eng., I was advised by Mingjie Tang in IDS lab. My research interests include MLsys, LLM training and visualization.
+Hi, this is Yinghao Tang(唐英豪). I am currently a Ph.D. student in Computer Engineering at Zhejiang University under the supervision of Prof. Wei Chen in VAI group. Before that, I received my B.Eng. degree from Sichuan University, where I was advised by Prof. Mingjie Tang in IDS lab. My research interests include MLsys, LLM training and visualization.
