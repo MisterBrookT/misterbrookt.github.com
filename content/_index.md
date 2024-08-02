@@ -9,10 +9,10 @@ design:
   spacing: "6rem"
 
 sections:
-  - block: about.biography
+  - block: resume-biography-3
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
-      username: admin
+      username: admins
       text: ""
       # Show a call-to-action button under your biography? (optional)
       # button:
@@ -75,6 +75,7 @@ sections:
         exclude_featured: false
     design:
       view: citation
+      columns: '2'
 
 
   - block: cta-card
