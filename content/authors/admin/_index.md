@@ -43,8 +43,7 @@ profiles:
 interests:
   - 📘MLSystem
   - 📘LLM Training
-  - Visualization
-  - 📘Photography
+  - 📘Visualization
 
 education:
   - area: PhD Artificial Intelligence
