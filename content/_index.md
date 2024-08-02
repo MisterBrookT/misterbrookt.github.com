@@ -30,7 +30,10 @@ sections:
         #   size: cover
         #   position: center
         #   parallax: false
-    - block: collection
+
+  
+      
+  - block: collection
     id: news
     content:
       title: Recent News
@@ -60,7 +63,7 @@ sections:
       spacing:
         padding: [0, 0, 0, 0]
 
-        
+
   - block: collection
     id: papers
     content:
@@ -72,8 +75,6 @@ sections:
         exclude_featured: false
     design:
       view: citation
-      
-
 
 
   - block: cta-card
