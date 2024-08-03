@@ -51,44 +51,7 @@ sections:
       spacing:
         padding: [0, 0, 0, 0]
 
-  # - block: accomplishments
-  #   id: recent-news
-  #   content:
-  #     title: Recent News
-  #     text: |-
-  #       <ul>
-  #         <li>
-  #           <strong>[2024/03/16]</strong> <a href="https://dl.acm.org/doi/10.1145/3626246.3654739">GPTuner Demo</a> is <strong>accepted by SIGMOD 2024</strong>!
-  #         </li>
-  #         <li>
-  #           <strong>[2024/03/15]</strong> <a href="https://dl.acm.org/doi/abs/10.14778/3659437.3659449">GPTuner</a> is <strong>accepted by VLDB 2024</strong> !
-  #         </li>
-  #         <li>
-  #             <strong>[2024/02/27]</strong> A great virtual meeting with <a href="https://itrummer.github.io/">Prof. Immanuel Trummer</a>! Looking forward to <strong>pursuing my PhD</strong> in the database group at Cornell University in August!
-  #         </li>
-  #         <li>
-  #             <strong>[2024/02/01]</strong> Excited to <strong>be admitted to the PhD program</strong> in <a href="https://www.cs.cornell.edu/">Computer Science at Cornell University</a>, starting in Fall 2024!
-  #         </li>
-  #         <li>
-  #             <strong>[2024/01/31]</strong> A video demonstration of GPTuner is available on <a href="https://www.youtube.com/watch?v=Hz5Zck-9TlA">YouTube</a>! 
-  #         </li>
-  #         <li>
-  #             <strong>[2023/12/16]</strong> Congratulations! <a href="https://arxiv.org/abs/2311.03157">GPTuner</a> is under <strong>revision</strong> of Proceedings of Very Large Data Bases Conference (<strong>VLDB</strong>) ! 
-  #         </li>
 
-  #         <li>
-  #             <strong>[2023/11/20]</strong> <a href="https://mp.weixin.qq.com/s/n2_LUw2DXbuZFYGYbq_wTA">An article about GPTuner</a> gains near <strong>1500</strong> readers in just one day on Wechat Platform! 
-  #         </li>
-
-  #         <li>
-  #             <strong>[2023/11/19]</strong> <a href="https://github.com/SolidLao/GPTuner">GPTuner</a> gains more than <strong>3000</strong> views, <strong>200</strong> clones and <strong>30</strong> stars on github! 
-  #         </li>
-  #         <li>
-  #             <strong>[2023/11/02]</strong> <a href="https://github.com/SolidLao/GPTuner">GPTuner</a> is open-sourced now! 
-  #         </li>
-  #       </ul>
-  #   design:
-  #     columns: '2'
 
   - block: collection
     id: papers
@@ -103,6 +66,82 @@ sections:
       view: citation
       columns: '2'
 
+
+
+
+
+  - block: markdown
+    content:
+      title: '📚 My Research'
+      subtitle: ''
+      text: |-
+        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+
+        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+        
+        Please reach out to collaborate 😃
+    design:
+      columns: '1'
+  - block: collection
+    id: papers
+    content:
+      title: Featured Publications
+      filters:
+        folders:
+          - publication
+        featured_only: true
+    design:
+      view: article-grid
+      columns: 2
+  - block: collection
+    content:
+      title: Recent Publications
+      text: ""
+      filters:
+        folders:
+          - publication
+        exclude_featured: false
+    design:
+      view: citation
+  - block: collection
+    id: talks
+    content:
+      title: Recent & Upcoming Talks
+      filters:
+        folders:
+          - event
+    design:
+      view: article-grid
+      columns: 1
+  - block: collection
+    id: news
+    content:
+      title: Recent News
+      subtitle: ''
+      text: ''
+      # Page type to display. E.g. post, talk, publication...
+      page_type: post
+      # Choose how many pages you would like to display (0 = all pages)
+      count: 5
+      # Filter on criteria
+      filters:
+        author: ""
+        category: ""
+        tag: ""
+        exclude_featured: false
+        exclude_future: false
+        exclude_past: false
+        publication_type: ""
+      # Choose how many pages you would like to offset by
+      offset: 0
+      # Page order: descending (desc) or ascending (asc) date.
+      order: desc
+    design:
+      # Choose a layout view
+      view: date-title-summary
+      # Reduce spacing
+      spacing:
+        padding: [0, 0, 0, 0]
 
   - block: cta-card
     demo: true # Only display this section in the Hugo Blox Builder demo site
