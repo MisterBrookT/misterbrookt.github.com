@@ -80,7 +80,7 @@ skills:
       - name: Guitar
         description: ''
         percent: 30
-        icon: cat
+        icon: hero/musical-note
       # - name: Photography
         # description: ''
         # percent: 80
