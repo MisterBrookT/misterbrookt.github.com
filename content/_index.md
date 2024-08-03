@@ -24,18 +24,7 @@ sections:
           size: cover
           position: center
           parallax: false
-  
-  - block: collection
-    id: papers
-    content:
-      title: Featured Publications
-      filters:
-        folders:
-          - publication
-        featured_only: true
-    design:
-      view: article-grid
-      columns: 2
+
 
   - block: collection
     id: news
@@ -65,11 +54,24 @@ sections:
       view: date-title-summary
       # Reduce spacing
       spacing:
-        padding: [0, 0, 0, 0]
+        padding: [0, 0, 0, 0]  
 
-  - block: skills
+  - block: collection
+    id: papers
     content:
-      title: skills
+      title: Publications
+      filters:
+        folders:
+          - publication
+        featured_only: true
+    design:
+      view: article-grid
+      columns: 2
+
+  - block: hobbies
+    id: hobbies
+    content:
+      title: hobbies
       username: admin
 
   - block: cta-card

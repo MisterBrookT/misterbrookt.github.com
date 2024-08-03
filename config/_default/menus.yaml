@@ -17,9 +17,9 @@ main:
     weight: 3
 
   - name: Hobbies
-    url: /#papers
+    url: /#hobbies
     weight: 4
 
-  - name: CV
-    url: /#papers
-    weight: 5
+  # - name: CV
+  #   url: /#papers
+  #   weight: 5
