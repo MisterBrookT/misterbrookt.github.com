@@ -69,7 +69,7 @@ sections:
 
   - block: skills
     content:
-      title: Skills & Hobbies
+      title: skills
       username: admin
 
   - block: cta-card
