@@ -68,7 +68,7 @@ sections:
       view: article-grid
       columns: 2
 
-  - block: hobbies
+  - block: skills
     id: hobbies
     content:
       title: hobbies
