@@ -3,7 +3,7 @@
 title: 唐英豪
 
 # Name pronunciation (optional)
-name_pronunciation: 'Ying Hao Tang'
+name_pronunciation: 'Tang Ying Hao'
 
 # Full name (for SEO)
 first_name: Yinghao
@@ -41,9 +41,9 @@ profiles:
     url: https://scholar.google.com/
 
 interests:
-  - 📘MLSystem
-  - 📘LLM Training
-  - 📘Visualization
+  - MLSystem
+  - LLM Training
+  - Visualization
 
 education:
   - area: Ph.D Computer Science, now

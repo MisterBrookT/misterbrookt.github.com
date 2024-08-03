@@ -1,5 +1,5 @@
 ---
-title: My page
+title: ''
 type: landing
 
 sections:
@@ -67,7 +67,10 @@ sections:
       spacing:
         padding: [0, 0, 0, 0]
 
-
+  - block: skills
+    content:
+      title: Skills & Hobbies
+      username: admin
 
   - block: cta-card
     demo: true # Only display this section in the Hugo Blox Builder demo site
