@@ -38,12 +38,14 @@ sections:
       view: article-grid
       columns: 2
 
+
+
   - block: skills
     id: hobbies
     content:
       title: hobbies
       username: admin
-
+  
   - block: cta-card
     demo: true # Only display this section in the Hugo Blox Builder demo site
     content:
@@ -64,4 +66,6 @@ sections:
         # Card background color (CSS class)
         css_class: "bg-primary-700"
         css_style: ""
+
+  
 ---

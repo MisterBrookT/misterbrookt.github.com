@@ -38,7 +38,7 @@ profiles:
   - icon: brands/github
     url: https://github.com/MisterBrookT
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/
+    url: https://scholar.google.com/citations?user=FXixw64AAAAJ
 
 interests:
   - MLSystem

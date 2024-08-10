@@ -4,7 +4,7 @@ title: '(VLDB 2024) DLRover-RM: Resource Optimization for Deep Recommendation Mo
 authors:
 - Qinlong Wang
 - Tingfeng Lan
-- Yinghao Tang
+- admin
 - Ziling Huang
 - Yiheng Du
 - Haitao Zhang
@@ -13,7 +13,7 @@ authors:
 - Yuanchun Zhou
 - Ke Zhang
 - Mingjie Tang
-date: '2024-01-01'
+date: '2024-06-28'
 publishDate: '2024-08-10T03:00:23.853727Z'
 publication_types:
 - manuscript
