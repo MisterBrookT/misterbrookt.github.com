@@ -1,5 +1,5 @@
 ---
-title: 'DLRover-RM: Resource Optimization for Deep Recommendation Models Training
+title: '(VLDB 2024) DLRover-RM: Resource Optimization for Deep Recommendation Models Training
   in the Cloud'
 authors:
 - Qinlong Wang
@@ -22,4 +22,6 @@ links:
   url: https://arxiv.org/abs/2304.01468
 - name: URL
   url: https://arxiv.org/abs/2304.01468
+
+featured: true
 ---

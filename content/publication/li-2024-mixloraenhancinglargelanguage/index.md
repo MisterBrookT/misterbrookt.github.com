@@ -1,6 +1,5 @@
 ---
-title: 'MixLoRA: Enhancing Large Language Models Fine-Tuning with LoRA-based Mixture
-  of Experts'
+title: '(Preprint) MixLoRA: Enhancing Large Language Models Fine-Tuning with LoRA-based Mixture of Experts'
 authors:
 - Dengchun Li
 - Yingzi Ma
@@ -22,4 +21,6 @@ links:
   url: https://arxiv.org/abs/2404.15159
 - name: URL
   url: https://arxiv.org/abs/2404.15159
+
+featured: true
 ---
