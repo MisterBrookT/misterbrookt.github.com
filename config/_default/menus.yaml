@@ -6,19 +6,16 @@
 main:
   - name: About
     url: /
-    weight: 1
+    weight: 256
 
-  - name: News
-    url: /#news
-    weight: 2
 
   - name: Publications
     url: /#papers
-    weight: 3
+    weight: 512
 
   - name: Hobbies
     url: /#hobbies
-    weight: 4
+    weight: 1024
 
   # - name: CV
   #   url: /#papers
