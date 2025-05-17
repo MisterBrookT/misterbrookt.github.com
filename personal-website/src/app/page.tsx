@@ -26,7 +26,7 @@ export default function Home() {
               I am a Computer Science Ph.D. student at Stanford University, and my studies will be partially supported by the Fulbright Fellowship.
             </p>
             <p>
-              Please feel free to <a href="#" className="text-blue-400 underline">connect with me here</a> if you'd like to chat.
+              Please feel free to <a href="#" className="text-blue-400 underline">connect with me here</a> if you&apos;d like to chat.
             </p>
           </div>
         </div>
@@ -91,9 +91,9 @@ export default function Home() {
         <Image src="/childhood-placeholder.png" alt="Childhood" width={200} height={200} className="rounded-lg object-cover" />
         <div className="flex-1">
           <h2 className="text-3xl font-bold mb-4">MISC</h2>
-          <p className="mb-2">I love playing piano. Also, I like swimming a lot, so I go swimming almost everyday. I am a big fan of Tottenham Hotspur since 2009. I own more than 400 comic books and like reading Murakami Haruki's short novels. I love this quote the most:</p>
+          <p className="mb-2">I love playing piano. Also, I like swimming a lot, so I go swimming almost everyday. I am a big fan of Tottenham Hotspur since 2009. I own more than 400 comic books and like reading Murakami Haruki&apos;s short novels. I love this quote the most:</p>
           <blockquote className="italic text-gray-400 mt-4 border-l-4 border-blue-500 pl-4">
-            Dance like nobody's watching; Love like you've never been hurt; Work like you don't need money; Live like it's heaven on earth.
+            Dance like nobody&apos;s watching; Love like you&apos;ve never been hurt; Work like you don&apos;t need money; Live like it&apos;s heaven on earth.
           </blockquote>
         </div>
       </section>
