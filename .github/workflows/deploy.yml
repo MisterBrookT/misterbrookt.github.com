@@ -26,11 +26,6 @@ jobs:
           cd personal-website
           npm run build
 
-      - name: Export static site
-        run: |
-          cd personal-website
-          npm run export
-
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
