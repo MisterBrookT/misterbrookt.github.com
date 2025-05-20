@@ -4,6 +4,9 @@ on:
   push:
     branches: [main]
 
+permissions:
+  contents: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -31,4 +34,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./personal-website/out
-          publish_branch: gh-pages 
+          publish_branch: gh-pages
+          commit_message: "Deploy Next.js site to GitHub Pages"
+          force_orphan: true 
