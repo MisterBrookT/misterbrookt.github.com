@@ -5,12 +5,11 @@ export interface Person {
 
 export interface Publication {
   title: string;
-  authors: string[];
-  link?: string;
-  description: string;
+  author: string;
+  journal: string;
+  year: string;
+  abstract: string;
   image: string;
-  year?: string;
-  venue?: string;
 }
 
 export interface Project {
@@ -65,21 +64,19 @@ export const personalInfo: PersonalInfo = {
   publications: [
     {
       title: "MixLoRA: Enhancing Large Language Models Fine-Tuning with LoRA-based Mixture of Experts",
-      authors: ["Yinghao Tang", "Wei Chen", "et al."],
-      link: "https://arxiv.org/abs/2407.12345",
-      description: "A novel approach to fine-tune large language models using LoRA-based mixture of experts, improving efficiency and performance.",
-      image: "/pub1-placeholder.png",
+      author: "Dengchun Li and Yingzi Ma and Naizheng Wang and Zhengmao Ye and Zhiyuan Cheng and Yinghao Tang and Yan Zhang and Lei Duan and Jie Zuo and Cal Yang and Mingjie Tang",
+      journal: "Preprint",
       year: "2024",
-      venue: "Preprint"
+      abstract: "A novel approach to fine-tune large language models using LoRA-based mixture of experts, improving efficiency and performance.",
+      image: "/mixlora.png"
     },
     {
       title: "DLRover-RM: Resource Optimization for Deep Recommendation Models Training in the Cloud",
-      authors: ["Yinghao Tang", "Wei Chen", "et al."],
-      link: "https://dl.acm.org/doi/10.1145/1234567.1234568",
-      description: "An efficient resource management system for training deep recommendation models in cloud environments.",
-      image: "/pub2-placeholder.png",
+      author: "Qinlong Wang and Tingfeng Lan and Yinghao Tang and Bo Sang and Ziling Huang and Yiheng Du and Haitao Zhang and Jian Sha and Hui Lu and Yuanchun Zhou and others",
+      journal: "Proc. VLDB Endow.",
       year: "2024",
-      venue: "VLDB"
+      abstract: "An efficient resource management system for training deep recommendation models in cloud environments.",
+      image: "/dlrover.png"
     }
   ],
   projects: [
