@@ -55,6 +55,14 @@ export const personalInfo: PersonalInfo = {
   },
   publications: [
     {
+      title: "Exploring Multimodal Prompt for Visualization Authoring with Large Language Models",
+      author: "Zhen Wen and Luoxuan Weng and Yinghao Tang and Runjin Zhang and Yuxin Liu and Bo Pan and Minfeng Zhu and Wei Chen",
+      journal: "Preprint",
+      year: "2025",
+      abstract: "A novel approach to visualization authoring using multimodal prompts with large language models.",
+      image: "/vispilot.png"
+    },
+    {
       title: "DataLab: A Unified Platform for LLM-Powered Business Intelligence",
       author: "Luoxuan Weng and Yinghao Tang and Yingchaojie Feng and Zhuo Chang and Ruiqin Chen and Haozhe Feng and Chen Hou and Danqing Huang and Yang Li and Huaming Rao and Haonan Wang and Canshi Wei and Xiaofeng Yang and Yuhui Zhang and Yifeng Zheng and Xiuqi Huang and Minfeng Zhu and Yuxin Ma and Bin Cui and Peng Chen and Wei Chen",
       journal: "ICDE",

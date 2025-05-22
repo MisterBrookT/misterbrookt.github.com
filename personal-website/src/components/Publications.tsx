@@ -13,13 +13,13 @@ export function Publications({ publications }: PublicationsProps) {
         {publications.map((pub, index) => (
           <div key={index} className="flex flex-row gap-6 items-start">
             {pub.image && (
-              <div className="flex-shrink-0 w-[140px] flex items-center justify-center bg-[#23262b] border border-gray-700 rounded-lg overflow-hidden">
+              <div className="flex-shrink-0 w-[160px] h-[90px] flex items-center justify-center bg-[#23262b] border border-gray-700 rounded-lg overflow-hidden">
                 <Image
                   src={pub.image}
                   alt={pub.title}
-                  width={140}
-                  height={1}
-                  className="object-cover w-full"
+                  width={160}
+                  height={90}
+                  className="object-fill w-full h-full"
                 />
               </div>
             )}
