@@ -36,7 +36,8 @@ function renderWithPeople(text: string, people: Record<string, { name: string; l
 export function Header({ info }: HeaderProps) {
   return (
     <header className="w-full max-w-4xl flex flex-col items-center py-12">
-      <h1 className="text-5xl font-extrabold tracking-wide mb-5 text-center pacifico-regular">
+      {/* <h1 className="text-5xl font-extrabold tracking-wide mb-5 text-center pacifico-regular"> */}
+      <h1 className="text-5xl tracking-wide mb-5 text-center pacifico-regular">
         {info.name}
       </h1>
       <div className="flex flex-col sm:flex-row gap-4 items-center mb-4">
