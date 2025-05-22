@@ -5,18 +5,6 @@ interface PublicationsProps {
   publications: Publication[];
 }
 
-// Helper for author links (reuse logic from before)
-const getAuthorLink = (author: string) => {
-  switch (author) {
-    case "Wei Chen":
-      return "http://www.cad.zju.edu.cn/home/chenwei/";
-    case "Mingjie Tang":
-      return "https://scholar.google.com/citations?user=8nQkQJwAAAAJ";
-    default:
-      return null;
-  }
-};
-
 export function Publications({ publications }: PublicationsProps) {
   return (
     <section className="w-full max-w-4xl mt-12">
