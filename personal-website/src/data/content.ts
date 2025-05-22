@@ -37,11 +37,10 @@ export const personalInfo: PersonalInfo = {
   cvLink: "#",
   github: "https://github.com/MisterBrookT",
   profileImage: "/profile.jpeg",
-  bio: "I am a Ph.D. candidate in Computer Science at Zhejiang University under the supervision of {Wei Chen} in VAI group.",
+  bio: "I am a first year Ph.D. candidate in Computer Science at Zhejiang University under the supervision of {Wei Chen} in VAI group.",
   background: [
     "I received my B.Eng. degree from Sichuan University, where I was advised by {Mingjie Tang} in IDS lab.",
-    "My research interests include MLsys, LLM training and visualization.",
-    "I am passionate about building efficient and scalable machine learning systems."
+    "As a first-year Ph.D. student, I'm currently exploring various research directions. I'm actively trying out different fields to find an area that truly aligns with my academic interests."
   ],
   people: {
     "Wei Chen": {
