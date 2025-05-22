@@ -67,7 +67,7 @@ export function Header({ info }: HeaderProps) {
           <div className="text-lg bg-[#23262b] border border-blue-500 rounded p-4">
             <p className="mb-2">{renderWithPeople(info.bio, info.people)}</p>
           </div>
-          <div className="max-w-2xl text-base text-gray-300">
+          <div className="max-w-2xl text-base text-gray-300 text-justify">
             {info.background.map((text, index) => (
               <p key={index} className={index > 0 ? "mt-2" : ""}>
                 {renderWithPeople(text, info.people)}

@@ -7,8 +7,8 @@ interface PublicationsProps {
 
 export function Publications({ publications }: PublicationsProps) {
   return (
-    <section className="w-full max-w-4xl mt-12">
-      <h2 className="text-3xl font-bold mb-6">PUBLICATIONS</h2>
+    <section className="w-full max-w-4xl mt-12 max-w-[800px]">
+      <h2 className="text-2xl font-bold mb-6">PUBLICATIONS</h2>
       <div className="flex flex-col gap-10">
         {publications.map((pub, index) => (
           <div key={index} className="flex flex-row gap-6 items-start">
@@ -23,9 +23,9 @@ export function Publications({ publications }: PublicationsProps) {
                 />
               </div>
             )}
-            <div className="flex-1">
-              <h3 className="font-bold text-2xl mb-1">{pub.title}</h3>
-              <div className="text-base mb-1 text-gray-200">
+            <div className="flex-1 text-justify">
+              <h3 className="font-bold text-base mb-1">{pub.title}</h3>
+              <div className="text-sm mb-1 text-gray-200">
                 {pub.author.split(/\s+and\s+/).map((a, i) => (
                   <span key={i}>
                     {i > 0 && ', '}
@@ -36,7 +36,7 @@ export function Publications({ publications }: PublicationsProps) {
               <div className="italic text-gray-400 mb-1">
                 {pub.journal} {pub.year}
               </div>
-              <div className="text-base text-gray-300">
+              <div className="text-sm text-gray-300">
                 {pub.abstract}
               </div>
             </div>

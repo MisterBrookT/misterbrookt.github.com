@@ -88,8 +88,8 @@ export const personalInfo: PersonalInfo = {
     },
   ],
   misc: {
-    image: "/childhood-placeholder.png",
-    description: "I love playing piano and swimming. I am a big fan of Tottenham Hotspur since 2009. I enjoy reading Murakami Haruki's novels and exploring new technologies.",
-    quote: "Stay hungry, stay foolish."
+    image: "/chromakopia.jpeg",
+    description: "Except for academics, I keep the habits of reading and exercising, including swimming and working out. I love music, especially R&B and Hip-Hop 🎧. My favorite artists are Tyler, The Creator and Frank Ocean. One of my favorite quotes from `White Ferrari` by Frank Ocean is:",
+    quote: "Mind Over Matter is magic, I do magic."
   }
 }; 
