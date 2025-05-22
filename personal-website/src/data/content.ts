@@ -12,25 +12,17 @@ export interface Publication {
   image: string;
 }
 
-export interface Project {
-  title: string;
-  description: string;
-  link?: string;
-  image: string;
-}
-
 export interface PersonalInfo {
   name: string;
   title: string;
   email: string;
   cvLink: string;
-  blogLink: string;
+  github: string;
   profileImage: string;
   bio: string;
   background: string[];
   people: Record<string, Person>;
   publications: Publication[];
-  projects: Project[];
   misc: {
     image: string;
     description: string;
@@ -43,7 +35,7 @@ export const personalInfo: PersonalInfo = {
   title: "Ph.D. Student",
   email: "tangyinghao@zju.edu.cn",
   cvLink: "#",
-  blogLink: "#",
+  github: "https://github.com/MisterBrookT",
   profileImage: "/profile.jpeg",
   bio: "I am a Ph.D. candidate in Computer Science at Zhejiang University under the supervision of {Wei Chen} in VAI group.",
   background: [
@@ -58,10 +50,26 @@ export const personalInfo: PersonalInfo = {
     },
     "Mingjie Tang": {
       name: "Mingjie Tang",
-      link: "https://scholar.google.com/citations?user=8nQkQJwAAAAJ"
+      link: "https://merlintang.github.io/"
     }
   },
   publications: [
+    {
+      title: "DataLab: A Unified Platform for LLM-Powered Business Intelligence",
+      author: "Luoxuan Weng and Yinghao Tang and Yingchaojie Feng and Zhuo Chang and Ruiqin Chen and Haozhe Feng and Chen Hou and Danqing Huang and Yang Li and Huaming Rao and Haonan Wang and Canshi Wei and Xiaofeng Yang and Yuhui Zhang and Yifeng Zheng and Xiuqi Huang and Minfeng Zhu and Yuxin Ma and Bin Cui and Peng Chen and Wei Chen",
+      journal: "ICDE",
+      year: "2025",
+      abstract: "a unified BI platform that integrates a one-stop LLM-based agent framework with a augmented computational notebook interface.",
+      image: "/datalab.png"
+    },
+    {
+      title: "DLRover-RM: Resource Optimization for Deep Recommendation Models Training in the Cloud",
+      author: "Qinlong Wang and Tingfeng Lan and Yinghao Tang and Bo Sang and Ziling Huang and Yiheng Du and Haitao Zhang and Jian Sha and Hui Lu and Yuanchun Zhou and others",
+      journal: "VLDB",
+      year: "2024",
+      abstract: "An efficient resource management system for training deep recommendation models in cloud environments.",
+      image: "/dlrover.png"
+    },
     {
       title: "MixLoRA: Enhancing Large Language Models Fine-Tuning with LoRA-based Mixture of Experts",
       author: "Dengchun Li and Yingzi Ma and Naizheng Wang and Zhengmao Ye and Zhiyuan Cheng and Yinghao Tang and Yan Zhang and Lei Duan and Jie Zuo and Cal Yang and Mingjie Tang",
@@ -70,28 +78,6 @@ export const personalInfo: PersonalInfo = {
       abstract: "A novel approach to fine-tune large language models using LoRA-based mixture of experts, improving efficiency and performance.",
       image: "/mixlora.png"
     },
-    {
-      title: "DLRover-RM: Resource Optimization for Deep Recommendation Models Training in the Cloud",
-      author: "Qinlong Wang and Tingfeng Lan and Yinghao Tang and Bo Sang and Ziling Huang and Yiheng Du and Haitao Zhang and Jian Sha and Hui Lu and Yuanchun Zhou and others",
-      journal: "Proc. VLDB Endow.",
-      year: "2024",
-      abstract: "An efficient resource management system for training deep recommendation models in cloud environments.",
-      image: "/dlrover.png"
-    }
-  ],
-  projects: [
-    {
-      title: "Project Title 1",
-      description: "Short description of the project goes here. What did you build? What was the impact?",
-      link: "#",
-      image: "/proj1-placeholder.png"
-    },
-    {
-      title: "Project Title 2",
-      description: "Short description of the project goes here. What did you build? What was the impact?",
-      link: "#",
-      image: "/proj2-placeholder.png"
-    }
   ],
   misc: {
     image: "/childhood-placeholder.png",
