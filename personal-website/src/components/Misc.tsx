@@ -8,7 +8,7 @@ interface MiscProps {
 
 export function Misc({ image, description, quote }: MiscProps) {
   return (
-    <section className="w-full max-w-4xl mt-12 max-w-[800px]">
+    <section className="w-full max-w-4xl mt-12 max-w">
       <h2 className="text-2xl font-bold mb-6">MISC</h2>
       <div className="flex flex-row gap-6 items-start">
         <div className="flex-shrink-0 w-[160px] h-[90px] flex items-center justify-center bg-[#23262b] border border-gray-700 rounded-lg overflow-hidden">

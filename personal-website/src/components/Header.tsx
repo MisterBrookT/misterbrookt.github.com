@@ -64,7 +64,7 @@ export function Header({ info }: HeaderProps) {
           height={180}
           className="rounded-full border-4 border-gray-700 object-cover"
         />
-        <div className="flex flex-col gap-4 max-w-xl">
+        <div className="flex flex-col gap-4 max-w">
           <div className="text-lg bg-[#23262b] border border-blue-500 rounded p-4">
             <p className="mb-2">{renderWithPeople(info.bio, info.people)}</p>
           </div>

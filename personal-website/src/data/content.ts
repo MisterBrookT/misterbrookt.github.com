@@ -54,6 +54,14 @@ export const personalInfo: PersonalInfo = {
   },
   publications: [
     {
+      title: "SCORPIO: Serving the Right Requests at the Right Time for Heterogeneous SLOs in LLM Inference",
+      author: "Yinghao Tang, Tingfeng Lan, Xiuqi Huang, Hui Lu, Wei Chen",
+      journal: "Preprint",
+      year: "2025",
+      abstract: "An SLO-oriented LLM serving system that maximizes system goodput and SLO attainment by exploiting SLO heterogeneity through adaptive scheduling across admission control, queue management, and batch selection.",
+      image: "/scorpio.png"
+    },
+    {
       title: "Exploring Multimodal Prompt for Visualization Authoring with Large Language Models",
       author: "Zhen Wen and Luoxuan Weng and Yinghao Tang and Runjin Zhang and Yuxin Liu and Bo Pan and Minfeng Zhu and Wei Chen",
       journal: "Preprint",

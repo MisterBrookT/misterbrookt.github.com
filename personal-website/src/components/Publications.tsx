@@ -7,7 +7,7 @@ interface PublicationsProps {
 
 export function Publications({ publications }: PublicationsProps) {
   return (
-    <section className="w-full max-w-4xl mt-12 max-w-[800px]">
+    <section className="w-full max-w-4xl mt-12 max-w">
       <h2 className="text-2xl font-bold mb-6">PUBLICATIONS</h2>
       <div className="flex flex-col gap-10">
         {publications.map((pub, index) => (
