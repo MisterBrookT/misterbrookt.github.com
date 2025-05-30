@@ -10,6 +10,7 @@ export interface Publication {
   year: string;
   abstract: string;
   image: string;
+  paper_link?: string;
 }
 
 export interface PersonalInfo {
@@ -55,11 +56,12 @@ export const personalInfo: PersonalInfo = {
   publications: [
     {
       title: "SCORPIO: Serving the Right Requests at the Right Time for Heterogeneous SLOs in LLM Inference",
-      author: "Yinghao Tang, Tingfeng Lan, Xiuqi Huang, Hui Lu, Wei Chen",
+      author: "Yinghao Tang and Tingfeng Lan and Xiuqi Huang and Hui Lu and Wei Chen",
       journal: "Preprint",
       year: "2025",
       abstract: "An SLO-oriented LLM serving system that maximizes system goodput and SLO attainment by exploiting SLO heterogeneity through adaptive scheduling across admission control, queue management, and batch selection.",
-      image: "/scorpio.png"
+      image: "/scorpio.png",
+      paper_link: "https://arxiv.org/abs/2505.23022"
     },
     {
       title: "Exploring Multimodal Prompt for Visualization Authoring with Large Language Models",
@@ -67,7 +69,8 @@ export const personalInfo: PersonalInfo = {
       journal: "Preprint",
       year: "2025",
       abstract: "A novel approach to visualization authoring using multimodal prompts with large language models.",
-      image: "/vispilot.png"
+      image: "/vispilot.png",
+      paper_link: "https://wenzhen.site/vispilot/"
     },
     {
       title: "DataLab: A Unified Platform for LLM-Powered Business Intelligence",
@@ -75,7 +78,8 @@ export const personalInfo: PersonalInfo = {
       journal: "ICDE",
       year: "2025",
       abstract: "a unified BI platform that integrates a one-stop LLM-based agent framework with a augmented computational notebook interface.",
-      image: "/datalab.png"
+      image: "/datalab.png",
+      paper_link: "https://arxiv.org/abs/2412.02205"
     },
     {
       title: "DLRover-RM: Resource Optimization for Deep Recommendation Models Training in the Cloud",
@@ -83,7 +87,8 @@ export const personalInfo: PersonalInfo = {
       journal: "VLDB",
       year: "2024",
       abstract: "An efficient resource management system for training deep recommendation models in cloud environments.",
-      image: "/dlrover.png"
+      image: "/dlrover.png",
+      paper_link: "https://www.vldb.org/pvldb/vol17/p4130-tang.pdf"
     },
     {
       title: "MixLoRA: Enhancing Large Language Models Fine-Tuning with LoRA-based Mixture of Experts",
@@ -91,7 +96,8 @@ export const personalInfo: PersonalInfo = {
       journal: "Preprint",
       year: "2024",
       abstract: "A novel approach to fine-tune large language models using LoRA-based mixture of experts, improving efficiency and performance.",
-      image: "/mixlora.png"
+      image: "/mixlora.png",
+      paper_link: "https://arxiv.org/abs/2404.15159"
     },
   ],
   misc: {

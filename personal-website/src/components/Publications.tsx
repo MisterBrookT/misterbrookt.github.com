@@ -35,6 +35,16 @@ export function Publications({ publications }: PublicationsProps) {
               </div>
               <div className="italic text-gray-400 mb-1">
                 {pub.journal} {pub.year}
+                {pub.paper_link && (
+                  <a
+                    href={pub.paper_link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="ml-2 text-blue-400 underline hover:text-blue-300"
+                  >
+                    Paper
+                  </a>
+                )}
               </div>
               <div className="text-sm text-gray-300">
                 {pub.abstract}
