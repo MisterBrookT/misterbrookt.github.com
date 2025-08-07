@@ -51,21 +51,12 @@ A clean, modern personal academic website built with Next.js and Tailwind CSS, d
 Edit `src/data/content.ts` to modify:
 
 - **Personal info**: name, title, email, CV link, GitHub, bio
-- **Profile picture**: Add image to `public/` and update `profileImage` path
 - **Publications**: Add to `publications` array with title, authors, journal, year, abstract, image, paper link
 - **Background**: Update `background` array with education and research info
 - **People/Advisors**: Add to `people` object with name and website link
 - **Misc**: Update personal interests and quote in `misc` object
 
 Add images to `public/` directory and reference them in `content.ts`.
-
-
-## Key Files to Edit
-
-- **`src/data/content.ts`**: All website content and configuration
-- **`public/`**: Add your images and assets
-- **`src/components/`**: Customize layout and styling (advanced)
-
 
 ## License
 
