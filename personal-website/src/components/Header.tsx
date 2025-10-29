@@ -9,29 +9,68 @@ interface HeaderProps {
 }
 
 function renderWithPeople(text: string, people: Record<string, { name: string; link?: string }>) {
-  // Replace {Name} with a link if available, or plain text otherwise
-  return text.split(/(\{[^}]+\})/g).map((part, i) => {
-    const match = part.match(/^\{([^}]+)\}$/);
-    if (match) {
-      const person = people[match[1]];
-      if (person && person.link) {
-        return (
-          <a
-            key={i}
-            href={person.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-blue-400 underline"
-          >
-            {person.name}
-          </a>
-        );
-      } else if (person) {
-        return <span key={i}>{person.name}</span>;
-      }
+  // First, handle underline tags [u]text[/u]
+  const partsWithUnderline = text.split(/(\[u\][^\[]*\[\/u\])/gi);
+  const processedParts = partsWithUnderline.map((part, partIndex) => {
+    const underlineMatch = part.match(/\[u\](.*?)\[\/u\]/i);
+    if (underlineMatch) {
+      // This part should be underlined, now check for {Name} links within it
+      const underlinedText = underlineMatch[1];
+      const linkParts = underlinedText.split(/(\{[^}]+\})/g);
+      return (
+        <span key={`underline-${partIndex}`} className="underline">
+          {linkParts.map((linkPart, linkIndex) => {
+            const nameMatch = linkPart.match(/^\{([^}]+)\}$/);
+            if (nameMatch) {
+              const person = people[nameMatch[1]];
+              if (person && person.link) {
+                return (
+                  <a
+                    key={linkIndex}
+                    href={person.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 underline"
+                  >
+                    {person.name}
+                  </a>
+                );
+              } else if (person) {
+                return <span key={linkIndex}>{person.name}</span>;
+              }
+            }
+            return <span key={linkIndex}>{linkPart}</span>;
+          })}
+        </span>
+      );
     }
-    return <span key={i}>{part}</span>;
+    
+    // Regular part - check for {Name} links
+    return part.split(/(\{[^}]+\})/g).map((subPart, subIndex) => {
+      const match = subPart.match(/^\{([^}]+)\}$/);
+      if (match) {
+        const person = people[match[1]];
+        if (person && person.link) {
+          return (
+            <a
+              key={`${partIndex}-${subIndex}`}
+              href={person.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-400 underline"
+            >
+              {person.name}
+            </a>
+          );
+        } else if (person) {
+          return <span key={`${partIndex}-${subIndex}`}>{person.name}</span>;
+        }
+      }
+      return <span key={`${partIndex}-${subIndex}`}>{subPart}</span>;
+    });
   });
+
+  return <>{processedParts}</>;
 }
 
 export function Header({ info }: HeaderProps) {
