@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
 @import "tailwindcss";
 
 :root {
@@ -36,4 +37,18 @@ body {
   font-family: "Lobster", cursive;
   font-weight: 400;
   font-style: normal;
+}
+
+.matrix-font {
+  font-family: 'Orbitron', monospace;
+}
+
+
+@keyframes cursor-blink {
+  0%, 50% { 
+    opacity: 1; 
+  }
+  51%, 100% { 
+    opacity: 0.3; 
+  }
 }

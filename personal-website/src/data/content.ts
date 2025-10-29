@@ -21,7 +21,6 @@ export interface PersonalInfo {
   github: string;
   profileImage: string;
   bio: string;
-  background: string[];
   people: Record<string, Person>;
   publications: Publication[];
   misc: {
@@ -38,11 +37,7 @@ export const personalInfo: PersonalInfo = {
   cvLink: "#",
   github: "https://github.com/MisterBrookT",
   profileImage: "/profile.jpeg",
-  bio: "I am a first year Ph.D. student in Computer Science at Zhejiang University under the supervision of {Wei Chen} in VAI group.",
-  background: [
-    "I received my B.Eng. degree from Sichuan University, where I was advised by {Mingjie Tang} in IDS lab.",
-    "As a first-year Ph.D. student, I'm currently exploring various research directions. I'm actively trying out different fields to find an area that truly aligns with my academic interests."
-  ],
+  bio: "I am a first year Ph.D. student in Computer Science at Zhejiang University under the supervision of {Wei Chen} in VAI group. I received my B.Eng. degree from Sichuan University, where I was advised by {Mingjie Tang} in IDS lab. As a first-year Ph.D. student, I'm currently exploring various research directions. I'm actively trying out different fields to find an area that truly aligns with my academic interests.",
   people: {
     "Wei Chen": {
       name: "Wei Chen",

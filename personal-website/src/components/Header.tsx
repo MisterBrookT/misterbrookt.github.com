@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { PersonalInfo } from "@/data/content";
+import { AnimatedName } from "./AnimatedName";
 
 interface HeaderProps {
   info: PersonalInfo;
@@ -35,48 +36,44 @@ function renderWithPeople(text: string, people: Record<string, { name: string; l
 
 export function Header({ info }: HeaderProps) {
   return (
-    <header className="w-full max-w-4xl flex flex-col items-center py-12">
-      {/* <h1 className="text-5xl font-extrabold tracking-wide mb-5 text-center pacifico-regular"> */}
-      <h1 className="text-5xl tracking-wide mb-5 text-center pacifico-regular">
-        {info.name}
-      </h1>
-      <div className="flex flex-col sm:flex-row gap-4 items-center mb-4">
-        <a href={info.cvLink} className="text-blue-300 hover:text-blue-400 transition-colors flex items-center gap-2">
-          <Image src="/cv.svg" alt="CV" width={24} height={24} className="w-6 h-6" />
-          <span className="lobster-label text-lg hover:underline hover:scale-110 transition-transform">CV</span>
-        </a>
-        <span className="hidden sm:inline">|</span>
-        <a href="mailto:yinghaotang@zju.edu.cn" className="text-blue-300 hover:text-blue-400 transition-colors flex items-center gap-2">
-          <Image src="/email.svg" alt="Email" width={24} height={24} className="w-6 h-6" />
-          <span className="lobster-label text-lg hover:underline hover:scale-110 transition-transform">Email</span>
-        </a>
-        <span className="hidden sm:inline">|</span>
-        <a href={info.github} className="text-blue-300 hover:text-blue-400 transition-colors flex items-center gap-2">
-          <Image src="/github.svg" alt="GitHub" width={24} height={24} className="w-6 h-6" />
-          <span className="lobster-label text-lg hover:underline hover:scale-110 transition-transform">GitHub</span>
-        </a>
-      </div>
-      <div className="flex flex-col sm:flex-row gap-8 items-center mt-6">
-        <Image
-          src={info.profileImage}
-          alt="Profile photo"
-          width={180}
-          height={180}
-          className="rounded-full border-4 border-gray-700 object-cover"
-        />
-        <div className="flex flex-col gap-4 max-w">
-          <div className="text-lg bg-[#23262b] border border-blue-500 rounded p-4">
-            <p className="mb-2">{renderWithPeople(info.bio, info.people)}</p>
+    <header className="relative w-full max-w-4xl mx-auto flex flex-col items-center py-12 z-10 px-4">
+        <div className="flex flex-col items-center w-full">
+          <AnimatedName 
+            name={info.name}
+            className="text-6xl tracking-wide mb-8 text-center pacifico-regular"
+          />
+          <div className="flex flex-col sm:flex-row gap-4 items-center mb-4">
+            {/* svg icon */}
+            <a href={info.cvLink} className="text-blue-300 hover:text-blue-400 transition-colors flex items-center gap-2">
+              <Image src="/cv.svg" alt="CV" width={24} height={24} className="w-6 h-6" />
+              <span className="lobster-label text-lg hover:underline hover:scale-110 transition-transform">CV</span>
+            </a>
+            <span className="hidden sm:inline">|</span>
+            <a href="mailto:yinghaotang@zju.edu.cn" className="text-blue-300 hover:text-blue-400 transition-colors flex items-center gap-2">
+              <Image src="/email.svg" alt="Email" width={24} height={24} className="w-6 h-6" />
+              <span className="lobster-label text-lg hover:underline hover:scale-110 transition-transform">Email</span>
+            </a>
+            <span className="hidden sm:inline">|</span>
+            <a href={info.github} className="text-blue-300 hover:text-blue-400 transition-colors flex items-center gap-2">
+              <Image src="/github.svg" alt="GitHub" width={24} height={24} className="w-6 h-6" />
+              <span className="lobster-label text-lg hover:underline hover:scale-110 transition-transform">GitHub</span>
+            </a>
           </div>
-          <div className="max-w-2xl text-base text-gray-300 text-justify">
-            {info.background.map((text, index) => (
-              <p key={index} className={index > 0 ? "mt-2" : ""}>
-                {renderWithPeople(text, info.people)}
-              </p>
-            ))}
+          <div className="flex flex-col sm:flex-row gap-8 items-center mt-6">
+            <Image
+              src={info.profileImage}
+              alt="Profile photo"
+              width={180}
+              height={180}
+              className="rounded-full border-4 border-gray-700 object-cover"
+            />
+            <div className="flex flex-col gap-4 max-w">
+              <div className="max-w-2xl">
+                <p className="text-xl text-gray-300 mb-2 font-mono">{renderWithPeople(info.bio, info.people)}</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
     </header>
   );
-} 
+}
