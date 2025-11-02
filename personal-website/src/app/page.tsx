@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { Header } from "@/components/Header";
 import { Publications } from "@/components/Publications";
 import { Misc } from "@/components/Misc";
+import { CalendlyChat } from "@/components/CalendlyChat";
 import { MatrixRain } from "@/components/MatrixRain";
 import { personalInfo } from "@/data/content";
 
@@ -46,6 +47,7 @@ export default function Home() {
         <div className="w-full max-w-4xl mx-auto px-4">
           <Publications publications={personalInfo.publications} />
           <Misc {...personalInfo.misc} />
+          <CalendlyChat />
         </div>
       </section>
     </div>
