@@ -8,7 +8,7 @@ export function CalendlyChat() {
       <h2 className="text-2xl font-bold">30-minute chat with me</h2>
       <div 
         className="calendly-inline-widget" 
-        data-url="https://calendly.com/yinghaotang2001" 
+        data-url="https://calendly.com/yinghaotang2001?background_color=000000&text_color=ffffff" 
         style={{ minWidth: '320px', height: '700px' }}
       />
       <Script 
