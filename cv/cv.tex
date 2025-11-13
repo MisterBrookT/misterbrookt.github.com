@@ -1,0 +1,211 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[a4paper,12pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip}
+\usepackage{xstring} 	
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications (now using plain text, but keeping biblatex in case needed later)
+% \usepackage[style=authoryear,sorting=ynt, maxbibnames=99, giveninits=true]{biblatex}
+% \usepackage[backend=biber,giveninits=true,maxbibnames=15,minbibnames=3]{biblatex}
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+
+% job listing environments
+\newenvironment{jobshort}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    }
+    {
+    }
+
+\newenvironment{joblong}[2]
+    {
+    \begin{tabularx}{\linewidth}{@{}l X r@{}}
+    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \end{tabularx}
+    \begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    }
+    {
+    \end{itemize}
+    \end{minipage}    
+    }
+
+
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Yinghao Tang} \\[7.5pt]
+\href{https://misterbrookt.github.io/}{\raisebox{-0.05\height}\faGlobe\ Homepage} \ $|$ \ 
+\href{https://github.com/MisterBrookT}{\raisebox{-0.05\height}\faGithub\ GitHub} \ $|$ \ 
+\href{mailto:tangyinghao@zju.edu.cn}{\raisebox{-0.05\height}\faEnvelope \ Email} \ $|$ \ 
+\href{https://scholar.google.com/citations?user=YOUR_ID}{\raisebox{-0.05\height}\faGraduationCap\ Google Scholar} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+%About
+\section{About}
+Yinghao Tang is a second-year Ph.D. student in Computer Science at Zhejiang University, advised by Prof. Wei Chen in the VAI group. His research lies at the intersection of AI systems and intelligent computation, focusing on building efficient infrastructures for training, serving, and optimizing large-scale models. He is particularly interested in AI system design, scheduling, and resource optimization for deep learning frameworks. 
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2023 - present & Ph.D. in Computer Science at Zhejiang University \\
+& Advisor: Prof. Wei Chen \\[3.75pt]
+
+2019 - 2023 & B.Eng. in Computer Science at Sichuan University \\
+& Advisor: Prof. Mingjie Tang \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\section{Experience}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+Dec 2023 - Jul 2024 & Research Intern at Ant Group, Remote \\
+& Computation Resource Scheduling of Deep Learning Training Framework \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\section{Publications}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=6pt]
+\item \textbf{Y. Tang}, T. Lan, X. Huang, H. Lu, and W. Chen. ``SCORPIO: Serving the Right Requests at the Right Time for Heterogeneous SLOs in LLM Inference.'' \textit{Preprint}, 2025. \href{https://arxiv.org/abs/2505.23022}{arXiv:2505.23022}
+
+\item Z. Wen, L. Weng, \textbf{Y. Tang}, R. Zhang, Y. Liu, B. Pan, M. Zhu, and W. Chen. ``Exploring Multimodal Prompt for Visualization Authoring with Large Language Models.'' \textit{Preprint}, 2025. \href{https://wenzhen.site/vispilot/}{Link}
+
+\item L. Weng, \textbf{Y. Tang}, Y. Feng, Z. Chang, R. Chen, H. Feng, C. Hou, D. Huang, Y. Li, H. Rao, H. Wang, C. Wei, X. Yang, Y. Zhang, Y. Zheng, X. Huang, M. Zhu, Y. Ma, B. Cui, P. Chen, and W. Chen. ``DataLab: A Unified Platform for LLM-Powered Business Intelligence.'' In \textit{41st IEEE International Conference on Data Engineering (ICDE)}, 2025. \href{https://arxiv.org/abs/2412.02205}{arXiv:2412.02205}
+
+\item Q. Wang, T. Lan, \textbf{Y. Tang}, B. Sang, Z. Huang, Y. Du, H. Zhang, J. Sha, H. Lu, and Y. Zhou. ``DLRover-RM: Resource Optimization for Deep Recommendation Models Training in the Cloud.'' In \textit{50th International Conference on Very Large Data Bases (VLDB)}, 2024. \href{https://www.vldb.org/pvldb/vol17/p4130-tang.pdf}{Link}
+
+\item D. Li, Y. Ma, N. Wang, Z. Ye, Z. Cheng, \textbf{Y. Tang}, Y. Zhang, L. Duan, J. Zuo, C. Yang, and M. Tang. ``MixLoRA: Enhancing Large Language Models Fine-Tuning with LoRA-based Mixture of Experts.'' \textit{Preprint}, 2024. \href{https://arxiv.org/abs/2404.15159}{arXiv:2404.15159}
+\end{itemize}
+
+%----------------------------------------------------------------------------------------
+%	HONORS AND AWARDS
+%----------------------------------------------------------------------------------------
+\section{Honors and Awards}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+% Add your honors and awards here
+% Year & Award Name at \textbf{Institution} \\
+2020 & Outstanding Student Award at Sichuan University \\
+2022 & National Encouragement Scholarship 
+\end{tabularx}
+
+\vfill
+\center{\footnotesize Last updated: \today}
+
+\end{document}
