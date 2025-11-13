@@ -36,7 +36,7 @@ export const personalInfo: PersonalInfo = {
   email: "tangyinghao@zju.edu.cn",
   cvLink: "#",
   github: "https://github.com/MisterBrookT",
-  profileImage: "/profile.jpeg",
+  profileImage: "/profile.png",
    bio: "I am a second year Ph.D. student in Computer Science at Zhejiang University under the supervision of {Wei Chen} in VAI group. I received my B.Eng. degree from Sichuan University, where I was advised by {Mingjie Tang} in IDS lab. My research explores \"AI for Visual Communication\", focusing on [u]how to use artificial intelligence to communicate information in ways that are not only efficient but also aesthetically expressive and visually engaging[/u]. Outside my main research, I love tinkering with AI infra infrastructure and system design (side passion😊).",
   people: {
     "Wei Chen": {
